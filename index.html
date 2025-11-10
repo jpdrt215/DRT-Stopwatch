@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>D.R.T — Hiccup Relief</title>
+  <link rel="stylesheet" href="style.css?v=5" />
+  <meta name="theme-color" content="#000000" />
+</head>
+<!-- prevent scrolling during splash -->
+<body class="noscroll">
+  <!-- Splash -->
+  <div id="splash" class="visible">
+    <img src="splash.png?v=5" alt="D.R.T Hiccup Relief splash" class="splash-img" />
+  </div>
+
+  <!-- Timer -->
+  <main id="timer" class="hidden" aria-live="polite">
+    <h1 class="brand">D.R.T</h1>
+    <p class="subtitle">Hiccup Relief</p>
+
+    <!-- MM:SS:hundredths -->
+    <div class="time six" id="display">00:00:00</div>
+
+    <!-- Row 1 -->
+    <div class="controls">
+      <button id="start" class="btn">Start</button>
+      <button id="stop"  class="btn secondary">Stop</button>
+    </div>
+
+    <!-- Row 2 -->
+    <div class="controls">
+      <button id="copy"      class="btn secondary">Copy log</button>
+      <button id="resetAll"  class="btn danger">Reset All</button>
+    </div>
+
+    <!-- Results (hidden until first stop) -->
+    <section id="results" class="results">
+      <h2>Results</h2>
+      <ol id="list" class="list"></ol>
+    </section>
+
+    <!-- Big bottom Reset -->
+    <button id="reset" class="btn reset-big" aria-label="Reset and start new timer">Reset</button>
+  </main>
+
+  <script src="script.js?v=5"></script>
+</body>
+</html>
